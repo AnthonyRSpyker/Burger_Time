@@ -1,9 +1,21 @@
 const connection = require('/connection');
 
-const selectAll = () => {};
 
-const insertAll = () => {};
+const orm = {
+ selectAll(dataTable) {
+    const query = 'SELECT * FROM ??';
+    connection.query(query, [dataTable], (err, result) => {
+        if (err){ 
+            throw err;
+        }
+        cb(result);
+    });
+ },
 
-const updateOne = () => {};
+ insertAll = () => {},
+
+ updateOne = () => {},
+
+}
 
 module.exports = orm;
