@@ -39,7 +39,7 @@ router.get('/', (req, res) => {
     );
   });
 
-  router.delete('api/burgers/:id', (req, res) => {
+  router.delete('/api/burgers/:id', (req, res) => {
       const ids= `id = ${req.params.id}`;
 
       console.log('conditions', ids);

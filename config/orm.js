@@ -85,7 +85,7 @@ createOne(table, cols, vals, cb) {
 
       queryString += ` WHERE `;
       queryString += id;
-      console.log(queryString);
+      
       connection.query(queryString, (err, result) => {
           if (err) {
               throw err;
