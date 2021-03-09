@@ -41,8 +41,8 @@ const orm = {
     });
  },
 
-createOne(cols, vals, cb) {
-    let queryString = `INSERT INTO burgers`;
+createOne(table, cols, vals, cb) {
+    let queryString = `INSERT INTO ${table}`;
 
     queryString += ' (';
     queryString += cols.toString();

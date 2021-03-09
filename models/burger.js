@@ -15,8 +15,11 @@ const burger = {
     updateOne(objColVals, condition, cb) {
         orm.updateOne('burgers', objColVals, condition, (res) => cb(res)) 
             
-        },
-    };
+    },
+    deleteOne(ids, cb) {
+        orm.deleteOne('burgers', ids, (res) => cb(res));
+      },
+};
 
 module.exports = burger;
 
