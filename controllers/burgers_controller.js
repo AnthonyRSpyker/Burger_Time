@@ -39,4 +39,17 @@ router.get('/', (req, res) => {
     );
   });
 
+  router.delete('api/burgers/:id', (req, res) => {
+      const ids= `id = ${req.params.id}`;
+
+      console.log('conditions', ids);
+
+      burger.deleteOne(ids, (result) => {
+          if (result.affectedRows === 0) {
+              return res.status(404).end();
+          }
+          res.status(200).end()
+      });
+  });
+
 module.exports = router;

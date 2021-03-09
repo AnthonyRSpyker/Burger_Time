@@ -1,5 +1,15 @@
 const connection = require('./connection.js');
 
+const printQuestionMarks = (num) => {
+    const arr = [];
+  
+    for (let i = 0; i < num; i++) {
+      arr.push('?');
+    }
+  
+    return arr.toString();
+  };
+
 const objToSql = (ob) => {
     const arr = [];
   
@@ -70,6 +80,20 @@ createOne(cols, vals, cb) {
     });
   },
 
+  deleteOne(table, id, cb) {
+      let queryString = `DELETE FROM ${table}`;
+
+      queryString += ` WHERE `;
+      queryString += id;
+      console.log(queryString);
+      connection.query(queryString, (err, result) => {
+          if (err) {
+              throw err;
+          }
+
+          cb(result);
+      });
+  },
 }
 
 module.exports = orm;
