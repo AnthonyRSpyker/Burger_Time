@@ -6,6 +6,7 @@
 }
 
 body{
+    background-color: tomato;
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
