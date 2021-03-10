@@ -4,7 +4,7 @@ require('dotenv').config();
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWS_URL);
 } else {
-const connection = mysql.createConnection({
+ connection = mysql.createConnection({
   host: process.env.host,
   port: 3306,
   user: process.env.user,
