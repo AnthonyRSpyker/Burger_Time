@@ -19,4 +19,43 @@ Its burger time baby!
   * connection.js
   * orm.js
 * controllers
-  - burgers_controller.js
+  * burgers_controller.js
+- db
+  - schema.sql
+  - seed.sql
+-models
+  - burgers.js
+- public
+  - css
+    - burger_style.css
+  - js
+    - index.js
+- views
+  - layouts
+    - main.handlebars
+  - partials
+    - burger-block.handlebars
+  - index.handlebars
+- .gitignore
+- README.md
+- package.json
+- server.js
+
+
+## Technological Support:
+  - node.js
+  - express.js
+  - express-handlebars
+  - dotenv
+  - mysql
+  - jawsDB mysql
+ 
+## Additions?
+
+    If you are intereseted in assisting this code, feel free to clone and make a pull request to the existing code or contact me via email.
+    
+## Thank you!
+
+  Thank you for checking out my repository.  I look for to any help or criticisms toward the app.
+  
+
