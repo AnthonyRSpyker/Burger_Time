@@ -51,11 +51,9 @@ Its burger time baby!
   - jawsDB mysql
  
 ## Additions?
-
     If you are intereseted in assisting this code, feel free to clone and make a pull request to the existing code or contact me via email.
     
 ## Thank you!
-
   Thank you for checking out my repository.  I look for to any help or criticisms toward the app.
   
 
